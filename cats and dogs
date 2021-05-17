@@ -1,0 +1,10 @@
+// taking input
+t=int(input())
+//loop for splitting inputs
+for i in range(0,t):
+    c,d,l=map(int,input().split())
+    k=max(d,c-d)
+    if( k*4 <= l <= (c+d)*4 and l%4==0):
+        print("yes")
+    else:
+        print("no")
